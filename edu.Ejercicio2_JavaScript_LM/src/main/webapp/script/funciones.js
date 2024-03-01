@@ -6,7 +6,7 @@
  function fechas(){
 	var fechaActual = new Date();
 	var diaActual = document.getElementById("diaActual").value;
-	var mesActual = document.getElementById("mesActual").value; 
+	var mesActual = document.getElementById("mesActual").value + 1; 
 	var anyoActual = document.getElementById("anyoActual").value;
 	
 	var calendario = {
@@ -16,7 +16,7 @@
 	    nombreMes: "Mayo" 
 	};
 	
-	if (diaActual === calendario.dia && mesActual === calendario.mes && anyoActual === calendario.anyo) {
+	if (diaActual == calendario.dia && mesActual == calendario.mes && anyoActual == calendario.anyo) {
     	window.alert("Es hoy");
 	} else {
     	window.alert("Aún falta");
